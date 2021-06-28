@@ -1,0 +1,72 @@
+  bash arg: -p
+  bash arg: com.google.android.dialer
+  bash arg: --throttle
+  bash arg: 1000
+  bash arg: -s
+  bash arg: 1000
+  bash arg: --ignore-crashes
+  bash arg: --ignore-timeouts
+  bash arg: --kill-process-after-error
+  bash arg: --ignore-security-exceptions
+  bash arg: -v
+  bash arg: 22000
+:Monkey: seed=1000 count=22000
+:AllowPackage: com.google.android.dialer
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.google.android.dialer/.extensions.GoogleDialtactsActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.google.android.dialer/.extensions.GoogleDialtactsActivity } in package com.google.android.dialer
+:Sending Touch (ACTION_DOWN): 0:(876.0,964.0)
+:Sending Touch (ACTION_UP): 0:(902.46747,941.43866)
+:Sending Touch (ACTION_DOWN): 0:(172.0,1463.0)
+:Sending Touch (ACTION_UP): 0:(173.65752,1463.0057)
+    // Rejecting start of Intent { act=android.intent.action.SENDTO dat=sms:xxxxxxxxxx cmp=com.android.mms/.ui.ComposeMessageActivity } in package com.android.mms
+  bash arg: -p
+  bash arg: com.google.android.dialer
+  bash arg: --throttle
+  bash arg: 1000
+  bash arg: -s
+  bash arg: 1000
+  bash arg: --ignore-crashes
+  bash arg: --ignore-timeouts
+  bash arg: --kill-process-after-error
+  bash arg: --ignore-security-exceptions
+  bash arg: -v
+  bash arg: 22000
+:Monkey: seed=1000 count=22000
+:AllowPackage: com.google.android.dialer
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.google.android.dialer/.extensions.GoogleDialtactsActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.google.android.dialer/.extensions.GoogleDialtactsActivity } in package com.google.android.dialer
+:Sending Touch (ACTION_DOWN): 0:(876.0,964.0)
+:Sending Touch (ACTION_UP): 0:(902.46747,941.43866)
+    // Allowing start of Intent { cmp=com.google.android.dialer/com.android.dialer.calldetails.OldCallDetailsActivity } in package com.google.android.dialer
+:Sending Touch (ACTION_DOWN): 0:(172.0,1463.0)
+:Sending Touch (ACTION_UP): 0:(173.65752,1463.0057)
